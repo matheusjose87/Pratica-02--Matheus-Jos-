@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Questao1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro nome: ");
+        String nome1 = scanner.nextLine();
+
+        System.out.print("Digite o segundo nome: ");
+        String nome2 = scanner.nextLine();
+
+        // O método equals() compara o conteúdo exato das Strings
+        if (nome1.equals(nome2)) {
+            System.out.println("Os nomes são exatamente iguais.");
+        } else {
+            System.out.println("Os nomes são diferentes.");
+        }
+
+        scanner.close();
+    }
+}
